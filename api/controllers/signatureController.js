@@ -188,7 +188,7 @@ exports.getSignature=(req,res)=>
   let cadena = "ESTA ES UNA FIRMA DIGITAL DE PRUEBA PARA EL LUNES"; //cadena a firmar
 */
     let result=null;
-    console.log("body: ",req.body);
+    //console.log("body: ",req.body);
     let rfc =req.body.rfc;        //rfc
     let password =req.body.password;       //contraseña de la llave privada
     let cadena =req.body.nrotramite; //cadena a firmar
@@ -253,7 +253,7 @@ exports.getSignatureLoggedIn=(req,res)=>
 
 exports.getInfoSignature=(req,res)=>
 {
-  console.log("body 2:", req.body);
+  //console.log("body 2:", req.body);
   //let filename =req.params.filename; 
   let filename =req.body.namecert;
   let carpeta=req.body.usuario;
