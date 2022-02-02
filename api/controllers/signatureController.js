@@ -204,8 +204,8 @@ exports.getSignature=(req,res)=>
    
 
     //leemos los certificados productivo
-    let privateKey = fs.readFileSync("C:\\inetpub\\wwwroot\\apitramites\\Upload\\certificados\\"+carpeta+"\\"+filekey);
-    let publicKey = fs.readFileSync("C:\\inetpub\\wwwroot\\apitramites\\Upload\\certificados\\"+carpeta+"\\"+filecer);
+    let privateKey = fs.readFileSync("C:\\SB_DocumentosPuebla\\Certificados\\"+carpeta+"\\"+filekey);
+    let publicKey = fs.readFileSync("C:\\SB_DocumentosPuebla\\Certificados\\"+carpeta+"\\"+filecer);
     //leemos los certificados desarrollo
     //let privateKey = fs.readFileSync("C:\\D\\Proyectos\\FirmaElectronica\\ApiRestTramites\\ApiRestTramites\\Upload\\certificados\\"+filekey);
     //let publicKey  = fs.readFileSync("C:\\D\\Proyectos\\FirmaElectronica\\ApiRestTramites\\ApiRestTramites\\Upload\\certificados\\"+filecer);
@@ -259,7 +259,7 @@ exports.getInfoSignature=(req,res)=>
   let carpeta=req.body.usuario;
   let result=null;
   //leemos el certificado en productivo
-  var publicKey = fs.readFileSync("C:\\inetpub\\wwwroot\\apitramites\\Upload\\certificados\\"+carpeta+"\\"+filename);
+    var publicKey = fs.readFileSync("C:\\SB_DocumentosPuebla\\Ccertificados\\"+carpeta+"\\"+filename);
   //leemos el certificado en desarrollo
   //var publicKey = fs.readFileSync("C:\\D\\Proyectos\\FirmaElectronica\\ApiRestTramites\\ApiRestTramites\\Upload\\certificados\\"+filename);
 
