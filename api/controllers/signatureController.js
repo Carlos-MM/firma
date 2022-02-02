@@ -259,7 +259,7 @@ exports.getInfoSignature=(req,res)=>
   let carpeta=req.body.usuario;
   let result=null;
   //leemos el certificado en productivo
-    var publicKey = fs.readFileSync("C:\\SB_DocumentosPuebla\\Ccertificados\\"+carpeta+"\\"+filename);
+    var publicKey = fs.readFileSync("C:\\SB_DocumentosPuebla\\Certificados\\"+carpeta+"\\"+filename);
   //leemos el certificado en desarrollo
   //var publicKey = fs.readFileSync("C:\\D\\Proyectos\\FirmaElectronica\\ApiRestTramites\\ApiRestTramites\\Upload\\certificados\\"+filename);
 
